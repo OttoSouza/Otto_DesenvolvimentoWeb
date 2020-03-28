@@ -1,0 +1,177 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  text-align: 0;
+}
+
+body {
+  min-height: 1800px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+body h1, body h2, body h3 {
+  font-family: "Aclonica", sans-serif;
+}
+
+body h1:hover, body h2:hover, body h3:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+body a {
+  cursor: pointer;
+  color: blue;
+}
+
+.page-container {
+  width: 100%;
+  padding: 10px 10px;
+  margin: auto;
+  text-align: left;
+  background-color: #fff;
+}
+
+.page-container h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 500px;
+  margin: 0 0 10px 0;
+}
+
+.page-container h2:hover {
+  color: #d50000;
+}
+
+.page-container h2 .fa-audible {
+  font-size: 1.5em;
+}
+
+.page-container p {
+  margin: auto;
+  font-size: 1.2em;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.page-container p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.page-container ol {
+  margin: 10px;
+  font-size: 1.1em;
+  counter-reset: li;
+  list-style: none;
+  display: inline-block;
+}
+
+.page-container ol li {
+  padding: 10px;
+  counter-increment: li;
+}
+
+.page-container ol li:before {
+  content: counter(li);
+  display: inline-block;
+  font-weight: bold;
+  color: #e20000;
+  margin-right: 10px;
+}
+
+.page-container ol a {
+  margin: 10px;
+  padding: 5px;
+}
+
+.page-container h4 {
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+}
+
+.page-container .input {
+  margin: 10px 10px 0px 20px;
+}
+
+#remover_button {
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#remover_button:hover {
+  background-color: #d50000;
+  color: white;
+}
+
+.parallax {
+  background-attachment: fixed;
+}
+
+.format {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.format h2, .format h3 {
+  color: #fff;
+  text-shadow: 3px 3px 4px rgba(12, 8, 9, 0.7);
+}
+
+.format h2 {
+  top: 4%;
+  font-size: 1.4em;
+  left: 8%;
+}
+
+.format h3 {
+  font-size: 1.4em;
+  bottom: 4%;
+  right: 10%;
+  font-weight: 200;
+}
+
+.book {
+  background-image: url("../../assets/img/book.jpg");
+}
+
+@media (min-width: 0px) {
+  .page-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .page-container {
+    width: 1200px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

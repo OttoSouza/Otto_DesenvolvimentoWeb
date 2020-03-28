@@ -1,0 +1,140 @@
+$container-color: #fff
+
+$breakpoint-sm: 0px
+$breakpoint-md: 640px
+$breakpoint-lg: 1024px
+$breakpoint-xl: 1200px
+$breakpoint-xxl: 1440px
+
+$font-title: 'Aclonica', sans-serif
+$font-text: 'Roboto', sans-serif
+
+$shadow: 3px 3px 4px rgba(12, 8, 9, 0.7)
+
+body, html
+    margin: 0
+    padding: 0
+    text-align: 0
+
+body
+    min-height: 1800px
+    padding-bottom: 30px
+    background-color: $container-color
+    font-family: $font-text
+    h1,h2,h3
+        font-family: $font-title
+        &:hover
+            transform: rotate(20deg)
+    a
+        cursor: pointer
+        color: blue
+
+.page-container
+    width: 100%
+    padding: 10px 10px
+    margin: auto
+    text-align: left
+    background-color: $container-color
+    h2
+        font-size: 1.5em
+        text-transform: uppercase
+        font-family:
+        font-weight: 500px
+        margin: 0 0 10px 0
+        &:hover
+            color: #d50000
+        .fa-audible
+            font-size: 1.5em
+
+    p
+        margin: auto
+        font-size: 1.2em
+        letter-spacing: 0.3px
+        line-height: 30px
+        opacity: 0.7
+        margin-bottom: 10px
+        &:not(:last-of-type)
+            margin-bottom: 20px
+    ol
+        margin: 10px
+        font-size: 1.1em
+        counter-reset: li
+        list-style: none
+        display: inline-block
+        li
+            padding: 10px
+            counter-increment: li
+            &:before
+                content: counter(li)
+                display: inline-block
+                font-weight: bold
+                color: #e20000
+                margin-right: 10px
+        a
+            margin: 10px
+
+            padding: 5px
+    h4
+        display: inline-block
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+        padding: 5px
+        margin: 5px
+        font-family: $font-text
+        font-size: 1.1em
+    .input
+        margin: 10px 10px 0px 20px
+
+#remover_button
+    color: white
+    border: none
+    padding: 14px 28px
+    text-align: center
+    text-decoration: none
+    font-size: 10px
+    margin: 4px 2px
+    transition-duration: 0.4s
+    cursor: pointer
+    &:hover
+        background-color: #d50000
+        color: white
+
+.parallax
+    background-attachment: fixed
+
+.format
+    width: 100%
+    height: 300px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    h2,h3
+        font-family:
+        color: $container-color
+        text-shadow: $shadow
+    h2
+        top: 4%
+        font-size: 1.4em
+        left: 8%
+    h3
+        font-size: 1.4em
+        bottom: 4%
+        right: 10%
+        font-weight: 200
+
+.book
+    background-image: url("../../assets/img/book.jpg")
+
+@media (min-width: $breakpoint-sm)
+    .page-container
+        max-width: $breakpoint-lg
+
+@media (max-width: $breakpoint-md)
+    .page-container
+
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xxl)
+    .page-container
+        width: $breakpoint-xl
